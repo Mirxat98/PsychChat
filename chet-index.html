@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claude Chat</title>
+    <title>Matrix Chat</title>
     <style>
         body {
             margin: 0;
@@ -121,7 +121,7 @@
 <body>
     <div class="chat-container">
         <div class="chat-header">
-            <h2>Claude Chat</h2>
+            <h2>Matrix Chat</h2>
         </div>
         <div class="messages" id="messages"></div>
         <div class="input-area">
@@ -137,8 +137,7 @@
     </div>
 
     <script>
-        // 替换为你的 Worker URL
-        const WORKER_URL = 'https://chat.matrixyun.com';
+        const WORKER_URL = 'https://matrix-claude.xmirxat.workers.dev/';
         const messagesDiv = document.getElementById('messages');
         const userInput = document.getElementById('userInput');
         const sendButton = document.getElementById('sendButton');
@@ -196,7 +195,6 @@
             }
         }
 
-        // 页面加载完成后聚焦输入框
         window.onload = () => userInput.focus();
     </script>
 </body>
